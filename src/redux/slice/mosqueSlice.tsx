@@ -60,7 +60,7 @@ export const createMosque = createAsyncThunk(
   async ({ mosqueData, token }: createMosquePayload, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        'http://adeeny.com/api/v1/create-mosque/',
+        'https://adeeny.com/api/v1/create-mosque/',
         mosqueData,
         {
           headers: {
@@ -80,7 +80,7 @@ export const getAllMosqueData = createAsyncThunk<Mosque[], string>(
   'mosque/getMosque',
   async (token: string, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://adeeny.com/api/v1/get-all-mosques/', {
+      const response = await axios.get('https://adeeny.com/api/v1/get-all-mosques/', {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,

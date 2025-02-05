@@ -50,7 +50,7 @@ export const createUser = createAsyncThunk<User, User, { rejectValue: ApiError }
   'auth/createUser',
   async (userData, { rejectWithValue }) => {
     try {
-      const response = await axios.post('http://adeeny.com/api/auth/users/', userData,
+      const response = await axios.post('https://adeeny.com/api/auth/users/', userData,
 
         {
           headers: {
@@ -76,7 +76,7 @@ export const getCurrentUser = createAsyncThunk<User, string, { rejectValue: ApiE
 
     console.log(accessToken,"curr")
     try {
-      const response = await axios.get('http://adeeny.com/api/auth/users/me/', {
+      const response = await axios.get('https://adeeny.com/api/auth/users/me/', {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -98,7 +98,7 @@ export const loginUser = createAsyncThunk<TokenResponse, LoginPayload, { rejectV
   'auth/loginUser',
   async ({email,password}, { rejectWithValue }) => {
     try {
-      const response = await axios.post('http://adeeny.com/api/auth/jwt/create/', {email, password },
+      const response = await axios.post('https://adeeny.com/api/auth/jwt/create/', {email, password },
         
       );
 
@@ -119,7 +119,7 @@ export const verifyUser = createAsyncThunk<TokenResponse, otpPayload, { rejectVa
   'auth/verifyUser',
   async ({email,otp}, { rejectWithValue }) => {
     try {
-      const response = await axios.post('http://adeeny.com/api/auth/verify-otp/', {email,otp },
+      const response = await axios.post('https://adeeny.com/api/auth/verify-otp/', {email,otp },
         
       );
 

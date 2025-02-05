@@ -48,7 +48,7 @@ export const createWaqf = createAsyncThunk(
     try {
       console.log(waqfData,"wa je")
       const response = await axios.post(
-        'http://adeeny.com/api/v1/create-waqf-donation/',
+        'https://adeeny.com/api/v1/create-waqf-donation/',
         waqfData,
       
         {
@@ -69,7 +69,7 @@ export const getAllwaqfData = createAsyncThunk<Waqf[], string>(
   'Waqf/getWaqf',
   async (token: string, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://adeeny.com/api/v1/get-all-waqf-donations/', {
+      const response = await axios.get('https://adeeny.com/api/v1/get-all-waqf-donations/', {
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,

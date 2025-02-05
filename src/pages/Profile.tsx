@@ -6,7 +6,7 @@ import { AppDispatch, RootState } from '../redux/store/Store';
 import { useEffect, useState } from 'react';
 import { getCurrentUser } from '../redux/slice/authSlice';
 
-let baseURL = "http://adeeny.com";
+let baseURL = "https://adeeny.com";
 
 const Profile = () => {
 

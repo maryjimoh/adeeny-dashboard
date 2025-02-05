@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ClickOutside from '../ClickOutside';
 
-let baseURL = "http://adeeny.com"
+let baseURL = "https://adeeny.com"
 
 const DropdownUser = (loginUser: any) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);

@@ -4,7 +4,7 @@ import { AppDispatch, RootState } from '../../redux/store/Store';
 import { getAllwaqfData } from '../../redux/slice/waqfSlice';
 
 const itemsPerPage = 4;
-const baseURL = "http://adeeny.com";
+const baseURL = "https://adeeny.com";
 const MAX_LENGTH = 10;
 
 const WaqfTable = () => {

@@ -4,7 +4,7 @@ import { getAllMosqueData } from '../../redux/slice/mosqueSlice';
 import { AppDispatch, RootState } from '../../redux/store/Store';
 
 const itemsPerPage = 4; 
-let baseURL = "http://adeeny.com";
+let baseURL = "https://adeeny.com";
 const MAX_LENGTH = 20;
 
 interface TableProps {
