@@ -6,7 +6,7 @@ import axios from 'axios';
 import { AppDispatch, RootState } from '../../redux/store/Store';
 import Modal from '../../common/Loader/Modal';
 
-const AddMosque = () => {
+const  AddMosque = () => {
   const dispatch = useDispatch<AppDispatch>()
   const token = useSelector((state: RootState) => state.auth.accessToken);
 

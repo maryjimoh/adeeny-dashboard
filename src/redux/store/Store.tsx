@@ -1,4 +1,4 @@
-import { configureStore, applyMiddleware} from "@reduxjs/toolkit";
+import { configureStore} from "@reduxjs/toolkit";
 import authReducer from "../slice/authSlice"
 import mosqueSlice from "../slice/mosqueSlice";
 import waqfSlice from "../slice/waqfSlice"
